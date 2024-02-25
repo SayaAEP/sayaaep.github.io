@@ -415,27 +415,3 @@ main {
   aspect-ratio: 16 / 9;
   width: 100%;
 }
-.collapsed {
-  height: 0;
-  overflow: hidden;
-  transition: height 200ms;
-}
-#iframeSection.collapsed iframe {
-  display: none;
-}
-.iframereadme {
-  width: 92vw;
-  border: 1px solid black; /* Atur border sesuai kebutuhan */
-  box-sizing: border-box; /* Pastikan ukuran elemen termasuk padding dan border */
-  height: 1000px;
-  transition: height 200ms;
-}
-
-.iframereadme iframe {
-  width: 100%; /* Biarkan width iframe 100% dari parent (92vw dari .iframereadme) */
-  height: 100%;
-  border: none; /* Hilangkan border bawaan iframe */
-  margin: 0; /* Hilangkan margin bawaan iframe */
-  padding: 0; /* Hilangkan padding bawaan iframe */
-  transition: height 200ms;
-}
