@@ -1,0 +1,877 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BWERBREW</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <header class="header">
+        <a href="#home" class="logo"> <p class="logotext">BWERBREW</p> </a>
+        <form action="" class="search-form">
+            <input type="search" name="" placeholder="search here..." id="search-box">
+            <label for="search-box" class="fas fa-search"></label>
+        </form>
+        <div class="icons">
+            <div id="menu-btn" class="fas fa-bars"></div>
+            <div id="search-btn" class="fas fa-search"></div>
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-shopping-cart"></a>
+        </div>
+    </header>
+    <nav class="navbar">
+        <div id="close-navbar" class="fas fa-times"></div>
+        <a href="#home">home</a>
+        <a href="#shop">shop</a>
+        <a href="#gallery">galeri</a>
+        <a href="#team">tim</a>
+        <a href="#arrivals">Produk Baru</a>
+        <a href="#blogs">blog</a>
+    </nav>
+    <section class="home" id="home">
+
+        <div class="slide active">
+            <div class="content">
+                <img src="images/content-img-1.png" alt="">
+                <span>Produk Launching Kami</span>
+                <h3>Kosmetik</h3>
+                <a href="./blog/Kenapa memilih kami makeup membuat berbeda.html" class="btn">Lihat lebih lanjut</a>
+                <div class="controls">
+                    <div class="fas fa-angle-left" onclick="prev()"></div>
+                    <div class="fas fa-angle-right" onclick="next()"></div>
+                </div>
+            </div>
+            <div class="image">
+                <img src="images/home-img-1.png" alt="">
+            </div>
+        </div>
+
+        <div class="slide">
+            <div class="content">
+                <img src="images/content-img-2.png" alt="">
+                <span>Aksesoris Bonus</span>
+                <h3>Aksesoris</h3>
+                <a href="./blog/Kenapa memilih kami makeup membuat berbeda.html" class="btn">Lihat lebih lanjut</a>
+                <div class="controls">
+                    <div class="fas fa-angle-left" onclick="prev()"></div>
+                    <div class="fas fa-angle-right" onclick="next()"></div>
+                </div>
+            </div>
+            <div class="image">
+                <img src="images/home-img-2.png" alt="">
+            </div>
+        </div>
+
+        <div class="slide">
+            <div class="content">
+                <img src="images/content-img-3.png" alt="">
+                <span>Koleksi Baru</span>
+                <h3>skin care</h3>
+                <a href="./blog/Kenapa memilih kami makeup membuat berbeda.html" class="btn">Lihat lebih lanjut</a>
+                <div class="controls">
+                    <div class="fas fa-angle-left" onclick="prev()"></div>
+                    <div class="fas fa-angle-right" onclick="next()"></div>
+                </div>
+            </div>
+            <div class="image">
+                <img src="images/home-img-3.png" alt="">
+            </div>
+        </div>
+
+    </section>
+    <section class="category">
+
+        <a href="#" class="box">
+            <img src="images/category-1.png" alt="">
+            <p>Kosmetik</p>
+        </a>
+
+        <a href="#" class="box">
+            <img src="images/category-2.png" alt="">
+            <p>makeup</p>
+        </a>
+
+        <a href="#" class="box">
+            <img src="images/category-3.png" alt="">
+            <p>powder</p>
+        </a>
+
+        <a href="#" class="box">
+            <img src="images/category-4.png" alt="">
+            <p>lotion kulit</p>
+        </a>
+
+        <a href="#" class="box">
+            <img src="images/category-5.png" alt="">
+            <p>lipstik</p>
+        </a>
+
+        <a href="#" class="box">
+            <img src="images/category-6.png" alt="">
+            <p>Eye Liner</p>
+        </a>
+
+    </section>
+    <section class="about" id="about">
+
+        <div class="content">
+            <span>Kenapa memilih kami?</span>
+            <h3>makeup membuat berbeda</h3>
+            <p>Kami mengdesain sebuah makeup terpercaya dan memasuki
+                pasar global nasional dan internasional</p>
+            <a href="./blog/Kenapa memilih kami makeup membuat berbeda.html" class="btn">Lihat lebih lanjut</a>
+        </div>
+
+    </section>
+    <section class="shop" id="shop">
+
+        <div class="heading">
+            <h1>Produk Rekomendasi</h1>
+            <p>Kami memilih ini untuk produk kecantikan anda</p>
+        </div>
+
+        <div class="swiper products-slider">
+
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide slide">
+                    <div class="image">
+                        <span class="discount">-25%</span>
+                        <img src="images/product-1.jpg" alt="">
+                        <div class="icons">
+                            <a href="/produk/produk's.html" class="fas fa-shopping-cart"></a>
+                            <a href="#" class="fas fa-heart"></a>
+                            <a href="#" class="fas fa-share"></a>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <p>beauty products</p>
+                        <div class="price">Rp 50.000 <span>Rp 20.000.000</span></div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide">
+                    <div class="image">
+                        <span class="discount">-25%</span>
+                        <img src="images/product-2.jpg" alt="">
+                        <div class="icons">
+                            <a href="/produk/produk's.html" class="fas fa-shopping-cart"></a>
+                            <a href="#" class="fas fa-heart"></a>
+                            <a href="#" class="fas fa-share"></a>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <p>beauty products</p>
+                        <div class="price">Rp 50.000 <span>Rp 20.000.000</span></div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide">
+                    <div class="image">
+                        <span class="discount">-25%</span>
+                        <img src="images/product-3.jpg" alt="">
+                        <div class="icons">
+                            <a href="/produk/produk's.html" class="fas fa-shopping-cart"></a>
+                            <a href="#" class="fas fa-heart"></a>
+                            <a href="#" class="fas fa-share"></a>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <p>beauty products</p>
+                        <div class="price">Rp 50.000 <span>Rp 20.000.000</span></div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide">
+                    <div class="image">
+                        <span class="discount">-25%</span>
+                        <img src="images/product-4.jpg" alt="">
+                        <div class="icons">
+                            <a href="/produk/produk's.html" class="fas fa-shopping-cart"></a>
+                            <a href="#" class="fas fa-heart"></a>
+                            <a href="#" class="fas fa-share"></a>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <p>beauty products</p>
+                        <div class="price">Rp 50.000 <span>Rp 20.000.000</span></div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide">
+                    <div class="image">
+                        <span class="discount">-25%</span>
+                        <img src="images/product-5.jpg" alt="">
+                        <div class="icons">
+                            <a href="/produk/produk's.html" class="fas fa-shopping-cart"></a>
+                            <a href="#" class="fas fa-heart"></a>
+                            <a href="#" class="fas fa-share"></a>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <p>beauty products</p>
+                        <div class="price">Rp 50.000 <span>Rp 20.000.000</span></div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide">
+                    <div class="image">
+                        <span class="discount">-25%</span>
+                        <img src="images/product-6.jpg" alt="">
+                        <div class="icons">
+                            <a href="/produk/produk's.html" class="fas fa-shopping-cart"></a>
+                            <a href="#" class="fas fa-heart"></a>
+                            <a href="#" class="fas fa-share"></a>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <p>beauty products</p>
+                        <div class="price">Rp 50.000 <span>Rp 20.000.000</span></div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide">
+                    <div class="image">
+                        <span class="discount">-25%</span>
+                        <img src="images/product-7.jpg" alt="">
+                        <div class="icons">
+                            <a href="/produk/produk's.html" class="fas fa-shopping-cart"></a>
+                            <a href="#" class="fas fa-heart"></a>
+                            <a href="#" class="fas fa-share"></a>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <p>beauty products</p>
+                        <div class="price">Rp 50.000 <span>Rp 20.000.000</span></div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide">
+                    <div class="image">
+                        <span class="discount">-25%</span>
+                        <img src="images/product-8.jpg" alt="">
+                        <div class="icons">
+                            <a href="/produk/produk's.html" class="fas fa-shopping-cart"></a>
+                            <a href="#" class="fas fa-heart"></a>
+                            <a href="#" class="fas fa-share"></a>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <p>beauty products</p>
+                        <div class="price">Rp 50.000 <span>Rp 20.000.000</span></div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+
+        </div>
+
+    </section>
+    <section class="gallery" id="gallery">
+
+        <div class="heading">
+            <h1>Galeri Kami</h1>
+            <p>Berbagai foto pembuktian kami bahwa ke dunia luar bahwa
+                produk kami bagus dan keren sepanjang masa di jagat raya
+            </p>
+        </div>
+
+        <div class="lightbox">
+            <a href="images/img-1.jpg"><img src="images/img-1.jpg" alt=""></a>
+            <a href="images/img-2.jpg"><img src="images/img-2.jpg" alt=""></a>
+            <a href="images/img-3.jpg"><img src="images/img-3.jpg" alt=""></a>
+            <a href="images/img-4.jpg"><img src="images/img-4.jpg" alt=""></a>
+            <a href="images/img-5.jpg"><img src="images/img-5.jpg" alt=""></a>
+            <a href="images/img-6.jpg"><img src="images/img-6.jpg" alt=""></a>
+        </div>
+
+    </section>
+    <section class="team" id="team">
+
+        <div class="heading">
+            <h1>Tim kami</h1>
+            <p>Dengan artis terkenal dan kariawan profesional kami</p>
+        </div>
+
+        <div class="box-container">
+
+            <div class="box">
+                <div class="image">
+                    <img src="images/1.aysel.png" alt="">
+                    <div class="share">
+                        <a href="https://www.facebook.com/naimasultana.dhaly.5" class="fab fa-facebook-f"></a>
+                        <a href="#" class="fab fa-twitter"></a>
+                        <a href="#" class="fab fa-instagram"></a>
+                        <a href="#" class="fab fa-linkedin"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>Aysel Emir Putra</h3>
+                    <p>Yang Buat HTML</p>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="images/2.balqis.jpg" alt="">
+                    <div class="share">
+                        <a href="#" class="fab fa-facebook-f"></a>
+                        <a href="#" class="fab fa-twitter"></a>
+                        <a href="#" class="fab fa-instagram"></a>
+                        <a href="#" class="fab fa-linkedin"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>Balqis Erican</h3>
+                    <p>CEO BWERBREW / Ketua Kelompok</p>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="images/6.thesa.jpg" alt="">
+                    <div class="share">
+                        <a href="#" class="fab fa-facebook-f"></a>
+                        <a href="#" class="fab fa-twitter"></a>
+                        <a href="#" class="fab fa-instagram"></a>
+                        <a href="#" class="fab fa-linkedin"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>Thesa Lonika Skyqueen</h3>
+                    <p>Anggota Kelompok</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="images/7.ahzara.png" alt="">
+                    <div class="share">
+                        <a href="#" class="fab fa-facebook-f"></a>
+                        <a href="#" class="fab fa-twitter"></a>
+                        <a href="#" class="fab fa-instagram"></a>
+                        <a href="#" class="fab fa-linkedin"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>Ahzahrah</h3>
+                    <p>Anggota Kelompok</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="images/5.daniel.png" alt="">
+                    <div class="share">
+                        <a href="#" class="fab fa-facebook-f"></a>
+                        <a href="#" class="fab fa-twitter"></a>
+                        <a href="#" class="fab fa-instagram"></a>
+                        <a href="#" class="fab fa-linkedin"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>Muhammad Daniel</h3>
+                    <p>Anggota Kelompok</p>
+                </div>
+            </div>
+            
+            <div class="box">
+                <div class="image">
+                    <img src="images/4.daffa.png" alt="">
+                    <div class="share">
+                        <a href="#" class="fab fa-facebook-f"></a>
+                        <a href="#" class="fab fa-twitter"></a>
+                        <a href="#" class="fab fa-instagram"></a>
+                        <a href="#" class="fab fa-linkedin"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>Daffa Alinski Nugroho</h3>
+                    <p>Anggota Kelompok</p>
+                </div>
+            </div>
+            
+
+        </div>
+
+    </section>
+    <section class="arrivals" id="arrivals">
+
+        <div class="heading">
+            <h1>Produk Terbaru Kami</h1>
+            <p>Berbagai produk kami baru. lihat lah dan wajib beli!</p>
+        </div>
+
+        <div class="swiper arrivals-slider">
+
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide slide">
+                    <div class="image">
+                        <img src="images/arrival-1.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <p>beauty products</p>
+                        <div class="price">Rp 50.000 <span>Rp 20.000.000</span></div>
+                        <a href="/produk/produk's.html" class="btn">tambah ke keranjang</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide">
+                    <div class="image">
+                        <img src="images/arrival-2.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <p>beauty products</p>
+                        <div class="price">Rp 50.000 <span>Rp 20.000.000</span></div>
+                        <a href="/produk/produk's.html" class="btn">tambah ke keranjang</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide">
+                    <div class="image">
+                        <img src="images/arrival-3.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <p>beauty products</p>
+                        <div class="price">Rp 50.000 <span>Rp 20.000.000</span></div>
+                        <a href="/produk/produk's.html" class="btn">tambah ke keranjang</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide">
+                    <div class="image">
+                        <img src="images/arrival-4.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <p>beauty products</p>
+                        <div class="price">Rp 50.000 <span>Rp 20.000.000</span></div>
+                        <a href="/produk/produk's.html" class="btn">tambah ke keranjang</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide">
+                    <div class="image">
+                        <img src="images/arrival-5.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <p>beauty products</p>
+                        <div class="price">Rp 50.000 <span>Rp 20.000.000</span></div>
+                        <a href="/produk/produk's.html" class="btn">tambah ke keranjang</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide">
+                    <div class="image">
+                        <img src="images/arrival-6.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <p>beauty products</p>
+                        <div class="price">Rp 50.000 <span>Rp 20.000.000</span></div>
+                        <a href="/produk/produk's.html" class="btn">tambah ke keranjang</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide">
+                    <div class="image">
+                        <img src="images/arrival-7.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <p>beauty products</p>
+                        <div class="price">Rp 50.000 <span>Rp 20.000.000</span></div>
+                        <a href="/produk/produk's.html" class="btn">tambah ke keranjang</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide">
+                    <div class="image">
+                        <img src="images/arrival-8.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <p>beauty products</p>
+                        <div class="price">Rp 50.000 <span>Rp 20.000.000</span></div>
+                        <a href="/produk/produk's.html" class="btn">tambah ke keranjang</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+
+        </div>
+
+    </section>
+    <section class="reviews">
+
+        <div class="swiper reviews-slider">
+
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide slide">
+                    <div class="user">
+                        <img src="images/pic-1.png" alt="">
+                        <div class="info">
+                            <h3>Raziq Ramlam Choa</h3>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text">Barang nya bagus sangat rekomended
+                        cuma kurang diskon 100%. sayang nya barang nya gak dijual lagi :(
+                    </p>
+                </div>
+
+                <div class="swiper-slide slide">
+                    <div class="user">
+                        <img src="images/pic-2.png" alt="">
+                        <div class="info">
+                            <h3>Raja Juli Hartawanto</h3>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text">barang nya meledak tapi saya pake gak meledak lagi karena di refund sama CEO nya karena
+                        dia takut nama BWERBREW hancur ditangan orang yang salah haha
+                    </p>
+                </div>
+
+                <div class="swiper-slide slide">
+                    <div class="user">
+                        <img src="images/pic-3.png" alt="">
+                        <div class="info">
+                            <h3>Alfarisky Putra Jerman</h3>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text">cocok untuk cewek saya yang ktanya raja meledak.</p>
+                </div>
+                <div class="swiper-slide slide">
+                    <div class="user">
+                        <img src="images/pic-4.png" alt="">
+                        <div class="info">
+                            <h3>Ikan Maulana</h3>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text">Duar dia suka haha. saya senang juga hahahaahahahaa.</p>
+                </div>
+                <div class="swiper-slide slide">
+                    <div class="user">
+                        <img src="images/pic-5.png" alt="">
+                        <div class="info">
+                            <h3>Koko China Indonesia</h3>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text">saya pake biar gak hitam. soalnya di afrika panas brutal</p>
+                </div>
+                <div class="swiper-slide slide">
+                    <div class="user">
+                        <img src="images/pic-6.png" alt="">
+                        <div class="info">
+                            <h3>junet riau</h3>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text">saya beli ini buat pasus. untung memutihkan muka saya hehe</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <section class="service">
+
+        <div class="box">
+            <img src="images/service-1.png" alt="">
+            <h3>Gratis ongkir</h3>
+            <p>Gratis ongkir ke semua indonesia karena kami lagi diskon besar besaran</p>
+        </div>
+
+        <div class="box">
+            <img src="images/service-2.png" alt="">
+            <h3>Pembayaran terpercaya</h3>
+            <p>Pembayaran dilakukan bisa secara cash di tempat atau bayar pakai gopay dana dan ovo dan m-banking</p>
+        </div>
+
+        <div class="box">
+            <img src="images/service-3.png" alt="">
+            <h3>24 Jam Customer Service</h3>
+            <p>Kami bersedia membantu anda yang mengalami produk yang tidak bisa digunakan</p>
+        </div>
+
+    </section>
+    <section class="blogs" id="blogs">
+
+        <div class="heading">
+            <h1>Blog harian Kami</h1>
+            <p>dapatkan tutorial pasang liptin ke mulut anda!</p>
+        </div>
+
+        <div class="swiper blogs-slider">
+
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide slide">
+                    <div class="image">
+                        <img src="images/img-1.jpg" alt="">
+                        <div class="icons">
+                            <a href="#"> <i class="fas fa-user"></i> oleh admin </a>
+                            <a href="#"> <i class="fas fa-clock"></i> 7 Agustus 2024 </a>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h3>Cara Menggunakan lipstick</h3>
+                        <p>Hati hati barang bisa meledak</p>
+                        <a href="#" class="btn">Lihat lebih lanjut</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide">
+                    <div class="image">
+                        <img src="images/img-2.jpg" alt="">
+                        <div class="icons">
+                            <a href="#"> <i class="fas fa-user"></i> oleh admin </a>
+                            <a href="#"> <i class="fas fa-clock"></i> 7 Agustus 2024 </a>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h3>Produk terbaru BWERBREW</h3>
+                        <p>Kami Mengadakan colaborasi dengan Taylor Swift juga dengan Alan Walker</p>
+                        <a href="#" class="btn">Lihat lebih lanjut</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide">
+                    <div class="image">
+                        <img src="images/img-3.jpg" alt="">
+                        <div class="icons">
+                            <a href="#"> <i class="fas fa-user"></i> oleh admin </a>
+                            <a href="#"> <i class="fas fa-clock"></i> 7 Agustus 2024 </a>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h3>Supreme!!</h3>
+                        <p>Kolab dengan suprim</p>
+                        <a href="#" class="btn">Lihat Lebih Lanjut</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide">
+                    <div class="image">
+                        <img src="images/img-4.jpg" alt="">
+                        <div class="icons">
+                            <a href="#"> <i class="fas fa-user"></i> oleh admin </a>
+                            <a href="#"> <i class="fas fa-clock"></i> 7 Agustus 2024 </a>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h3>Tampilkan Kecantikan kamu</h3>
+                        <p>Kamu itu cantik jangan iri hati <3</p>
+                        <a href="#" class="btn">Lihat lebih lanjut</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide">
+                    <div class="image">
+                        <img src="images/img-5.jpg" alt="">
+                        <div class="icons">
+                            <a href="#"> <i class="fas fa-user"></i> oleh admin </a>
+                            <a href="#"> <i class="fas fa-clock"></i> 7 Agustus 2024 </a>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h3>SADAR!</h3>
+                        <p>berikan kado ke lelaki kamu agar disayang</p>
+                        <a href="#" class="btn">Lihat lebih lanjut</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide">
+                    <div class="image">
+                        <img src="images/img-6.jpg" alt="">
+                        <div class="icons">
+                            <a href="#"> <i class="fas fa-user"></i> oleh admin </a>
+                            <a href="#"> <i class="fas fa-clock"></i> 7 Agustus 2024 </a>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h3>Tampilkan kecantikan kamu ke publik</h3>
+                        <p>Memenangkan hadiah dari menampilkan keanggunan kamu!</p>
+                        <a href="#" class="btn">Lihat lebih lanjut</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+
+        </div>
+
+    </section>
+    <section class="footer">
+
+        <div class="box-container">
+
+            <div class="box">
+                <h3>Halaman Kami</h3>
+                <a class="link" href="#home"> <i class="fas fa-angle-right"></i> home</a>
+                <a class="link" href="#shop"> <i class="fas fa-angle-right"></i> shop</a>
+                <a class="link" href="#gallery"> <i class="fas fa-angle-right"></i> galeri</a>
+                <a class="link" href="#team"> <i class="fas fa-angle-right"></i> tim</a>
+                <a class="link" href="#arrivals"> <i class="fas fa-angle-right"></i> produk Baru</a>
+                <a class="link" href="#blogs"> <i class="fas fa-angle-right"></i> blog</a>
+            </div>
+
+            <div class="box">
+                <h3>link ekstra</h3>
+                <a href="#" class="link"> <i class="fas fa-angle-right"></i> order Saya </a>
+                <a href="#" class="link"> <i class="fas fa-angle-right"></i> favorit Saya </a>
+                <a href="#" class="link"> <i class="fas fa-angle-right"></i> wishlish Saya </a>
+                <a href="#" class="link"> <i class="fas fa-angle-right"></i> aturan web </a>
+                <a href="#" class="link"> <i class="fas fa-angle-right"></i> S&K berlaku </a>
+            </div>
+
+            <div class="box">
+                <h3>Kontak kami</h3>
+                <p> <i class="fas fa-phone"></i> 911 </p>
+                <p> <i class="fas fa-phone"></i> 188 </p>
+                <p> <i class="fas fa-envelope"></i> fadliramadhangaming@123.com </p>
+                <p> <i class="fas fa-map"></i> Indonesia. Pekanbaru Rumbai. Kampung Bukit </p>
+                <div class="share">
+                    <a href="#" class="fab fa-facebook-f"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                    <a href="#" class="fab fa-linkedin"></a>
+                </div>
+            </div>
+
+            <div class="box">
+                <h3>newsletter</h3>
+                <p>subscribe for latest updates</p>
+                <form action="">
+                    <input type="email" name="" placeholder="enter your email" id="" class="email">
+                    <input type="submit" value="subscribe" class="btn">
+                </form>
+            </div>
+
+        </div>
+
+        <div class="credit"> Dibikin oleh <a target="_blank" href="https://sayaaep.github.io/"><span>SayaAEP</span></a> | all rights reserved! </div>
+
+    </section>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js"></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+        lightGallery(document.querySelector('.gallery .lightbox'));
+    </script>
+
+</body>
+
+</html>
