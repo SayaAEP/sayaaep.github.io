@@ -1,0 +1,113 @@
+/* Modern styling with Tailwind CSS */
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+
+:root {
+    --color-primary: #93c5fd;
+    --color-primary-hover: #bfdbfe;
+}
+
+footer {
+    font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Helvetica, Arial, sans-serif;
+    font-size: 0.75rem;
+}
+
+.fancy-link {
+    display: inline-block;
+    text-decoration: none;
+    transition: all 0.1s;
+    white-space: nowrap;
+    line-height: 1.7;
+}
+
+.arrow::after {
+    content: " →";
+}
+
+.badge-88x31 {
+    width: 88px;
+    height: 31px;
+    display: block;
+    image-rendering: pixelated;
+    transition: transform 0.1s;
+    position: relative;
+}
+
+.badge-88x31:hover {
+    transform: scale(1.05);
+}
+
+/* Cursor-following tooltip handled by JS */
+
+/* RGB animated text effect */
+.rgb-text {
+    background: linear-gradient(90deg, #42205f, #586298, #ffffff, #ffffff, #ffffff, #586298, #42205f);
+    background-size: 200% 100%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: rgb-shift 3s linear infinite;
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+}
+
+@keyframes rgb-shift {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 200% 50%;
+    }
+}
+
+/* Discord card popup */
+.discord-card-popup {
+    position: fixed;
+    top: 50%;
+    right: 40px;
+    transform: translate(0, -50%) translateX(20px);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    z-index: 9999;
+    pointer-events: none;
+    width: 340px;
+    max-height: 85vh;
+    overflow: visible;
+}
+
+.discord-card-popup.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translate(0, -50%) translateX(0);
+    pointer-events: auto;
+}
+
+.discord-card-popup iframe {
+    width: 357px;
+    height: auto;
+    background: transparent;
+    display: block;
+}
+
+/* Mobile: center the card */
+@media (max-width: 768px) {
+    .discord-card-popup {
+        right: 50%;
+        transform: translate(50%, -50%) translateY(20px);
+        width: 90vw;
+        max-width: 340px;
+        max-height: 90vh;
+        overflow-y: auto;
+    }
+    
+    .discord-card-popup.show {
+        transform: translate(50%, -50%) translateY(0);
+    }
+    
+    .discord-card-popup iframe {
+        width: 100%;
+        height: 85vh;
+        min-height: 600px;
+    }
+}
