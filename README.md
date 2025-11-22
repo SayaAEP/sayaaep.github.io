@@ -1,1 +1,1 @@
-# moved here from https://github.com/TukangM/tukangm.github.io
+# go away i hate y'all
