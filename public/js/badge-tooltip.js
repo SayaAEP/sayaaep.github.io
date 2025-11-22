@@ -5,8 +5,8 @@ document.addEventListener('DOMContentLoaded', () => {
     tooltip.className = 'badge-tooltip-cursor';
     tooltip.style.cssText = `
         position: fixed;
-        background: #27272a;
-        color: #e4e4e7;
+        background: #161616c7;
+        color: #e2e2e2ff;
         padding: 6px 10px;
         border-radius: 4px;
         font-size: 13px;
