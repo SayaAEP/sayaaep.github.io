@@ -40,7 +40,7 @@ footer {
 
 /* RGB animated text effect */
 .rgb-text {
-    background: linear-gradient(90deg, #42205f, #586298, #ffffff, #ffffff, #ffffff, #586298, #42205f);
+    background: linear-gradient(90deg, #42205f, #42205f, #586298, #ffffff, #ffffff, #ffffff, #ffffff, #586298, #42205f, #42205f);
     background-size: 200% 100%;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
