@@ -6,13 +6,8 @@
     <title>casa de aep</title>
     <meta name="description" content="this is my website uhh. just come here to see this website">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="public/css/style.css">
-    <!-- Scripts -->
-    <script src="public/js/oneko.js" defer></script>
-    <script src="public/js/discord-card.js" defer></script>
-    <script src="public/js/badge-tooltip.js" defer></script>
-    <script src="public/js/github_api_fetch_stargazer.js" defer></script>
+    <!-- Custom CSS - imported via webpack in js/index.js -->
+    <!-- Scripts - imported via webpack in js/index.js -->
     <script src="https://cdn.counter.dev/script.js" data-id="1d6365c4-30d9-4805-b9ea-4d5276763404" data-utcoffset="7"></script>
     <!-- Metadata -->
     <link rel="apple-touch-icon" sizes="180x180" href="metadata/apple-touch-icon.png">
@@ -28,7 +23,7 @@
                 <h1 class="text-7xl font-black leading-tight my-12 mb-4">hi, i'm <span class="rgb-text" id="aep-trigger">aep</span>!</h1>
                 <p class="font-bold text-xl leading-none">(a.k.a. sayaaep)</p>
                 <p class="font-medium text-lg mt-4">
-                    this is my website uhh. 
+                    this is my website uhh.
                     i like computers, coding, draw something and building cool stuff ig.
                 </p>
             </header>
@@ -47,7 +42,7 @@
             <section>
                 <h2 class="text-5xl font-black leading-tight mt-6">some link n gif's</h2>
                 <p class="font-medium opacity-80">idk why i love this thing :3</p>
-                
+
                 <div class="inline-flex flex-wrap gap-1 mt-4">
                     <!-- Retro animated GIF badges - GeoCities style -->
                     <a title="toro inoue???" class="inline-flex">
@@ -114,24 +109,24 @@
                         <img src="public/img/herobrine.gif" class="badge-88x31">
                     </a>
                 </div>
-                
+
                 <!-- <p class="mt-4 text-sm opacity-70">
                     want to exchange links? <a href="https://github.com/TukangM" class="fancy-link text-blue-300 bg-zinc-800 hover:bg-zinc-700 rounded px-2 py-1">contact me on GitHub</a>
                 </p> -->
             </section>
         </div>
     </main>
-    
+
     <!-- Footer - Separate gray section like adryd.com -->
     <footer class="p-6 bg-zinc-800 mt-auto text-xs leading-tight">
         <div class="page-view max-w-4xl mx-auto w-full">
             <br>
             <img src="public/img/sayaaep.png" class="h-22 mb-1">
-            copyright © 2025 SayaAEP. 
-            this website is dual licensed under the 
-            <a href="https://opensource.org/licenses/MIT" class="underline">MIT license</a> and 
-            <a href="https://creativecommons.org/licenses/by/4.0/" class="underline">CC BY 4.0 license</a>. 
-            built with <a href="https://tailwindcss.com" class="underline">Tailwind CSS</a>. 
+            copyright © 2025 SayaAEP.
+            this website is dual licensed under the
+            <a href="https://opensource.org/licenses/MIT" class="underline">MIT license</a> and
+            <a href="https://creativecommons.org/licenses/by/4.0/" class="underline">CC BY 4.0 license</a>.
+            built with <a href="https://tailwindcss.com" class="underline">Tailwind CSS</a>.
             pages heavily inspired from <a href="https://adryd.com/" class="underline">adryd.com</a>.
             <br>
             <div class="mt-2 inline-flex">
@@ -145,10 +140,10 @@
             <br><br>
         </div>
     </footer>
-    
+
     <!-- Discord Card Popup -->
     <div class="discord-card-popup" id="discord-card">
-        <iframe src="discord_card/discord_card.html"></iframe>
+        <iframe src="discord_card/discord_card.html" sandbox="allow-scripts"></iframe>
     </div>
 </body>
 </html>

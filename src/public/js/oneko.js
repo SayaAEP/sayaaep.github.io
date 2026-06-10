@@ -1,4 +1,4 @@
-// modified oneko.js from https://github.com/kyrie25/spicetify-oneko/blob/main/oneko.js
+// adaptation from https://github.com/kyrie25/spicetify-oneko/blob/main/oneko.js
 // oneko.js: https://github.com/adryd325/oneko.js
 
 (async function oneko() {
@@ -518,14 +518,14 @@
     return container;
   }
 
-  while (!Spicetify.Mousetrap) {
-    await new Promise((r) => setTimeout(r, 100));
-  }
-  Spicetify.Mousetrap.bind("o n e k o", () => {
-    Spicetify.PopupModal.display({
-      title: "Choose your neko",
-      // Render the modal new every time it is opened
-      content: pickerModal(),
+  // Spicetify-specific: only run if Spicetify is available (Spotify extension)
+  if (typeof Spicetify !== 'undefined' && Spicetify.Mousetrap) {
+    Spicetify.Mousetrap.bind("o n e k o", () => {
+      Spicetify.PopupModal.display({
+        title: "Choose your neko",
+        // Render the modal new every time it is opened
+        content: pickerModal(),
+      });
     });
-  });
+  }
 })();
