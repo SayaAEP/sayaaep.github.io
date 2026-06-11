@@ -1,5 +1,4 @@
-/* Modern styling with Tailwind CSS */
-@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+@import "tailwindcss";
 
 :root {
     --color-primary: #93c5fd;
