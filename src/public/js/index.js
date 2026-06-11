@@ -2,7 +2,7 @@
 import '../css/style.css';
 
 // Import JS modules
-import './oneko.js';
-import './discord-card.js';
+import './github-stars.js';  // Must run first to update data-tooltip-text
 import './badge-tooltip.js';
-import './github-stars.js';
+import './discord-card.js';
+import './oneko.js';
